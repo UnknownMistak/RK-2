@@ -164,17 +164,7 @@
     cursor: pointer;
   }
 
-  #mobile-menu.is-active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
+ 
 }
 
 .top {
@@ -218,7 +208,7 @@
   padding: 10rem 0;
 }
 
-.main__container {
+/* .main__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -229,21 +219,24 @@
   width: 100%;
   max-width: 1300px;
   padding: 0 50px;
-}
+} */
 
 .main__content {
   color: #fff;
   width: 100%;
+  margin-left: 37%;
 }
 
 .main__content h1 {
   font-size: 2rem;
   color: #FF6B6B;
+  text-align: center;
 }
 
 .main__content h2 {
   font-size: 4rem;
   color:#d801f5 ;
+  text-align: center;
 }
 
 .main__content p {
@@ -251,6 +244,7 @@
   font-size: 2rem;
   font-weight: 700;
   color:#1A535C;
+  text-align: center;
 }
 
 .main__btn {
@@ -302,8 +296,18 @@
   background: linear-gradient(to right, #dd2476, #ff512f);
 }
 
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 90%;
+}
 
-@media screen and (max-width: 1100px) {
+
+@media screen and (max-width: 1720px) {
   .main__container {
     display: grid;
     grid-template-columns: 1fr;
@@ -322,6 +326,17 @@
   .main__img--card {
     height: 425px;
     width: 425px;
+  }
+  @media screen and (max-width: 1720px) {
+    .main__content{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
+    
   }
 
   .main__content {
@@ -387,7 +402,7 @@
 .biblio h1 {
 color: #2600ff;
 }
-.biblio-main1, .biblio-main2, .biblio-main3 {
+.main-container-kind1, .main-container-kind2, .main-container-kind3 {
   width: 100%;
   height: auto;
   display: flex;
@@ -401,11 +416,11 @@ color: #2600ff;
   text-align: center;
   }
   
-  .biblio-main-block {
+  .main-container-kind-block {
   width: 30%;
   height: auto;
-  background-color: #6d6d6d;
-  border: 1px solid rgb(255, 255, 255);
+  background-color: #e00404;
+  border: 1px solid rgb(21, 248, 0);
   text-align: center;
   }
 
